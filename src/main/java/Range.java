@@ -1,6 +1,6 @@
 public class Range {
 
-    String rangeText;
+    private String rangeText;
 
     public Range(String text) {
         this.rangeText = text;
@@ -8,7 +8,7 @@ public class Range {
 
     public boolean isStartWithInclusive() {
         boolean result = false;
-        if (rangeText.contains("[")) {
+        if (rangeText.startsWith("[")) {
             result = true;
         }
         return result;
